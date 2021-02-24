@@ -1,0 +1,39 @@
+.bgLoader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(180deg, #5965E0 0%, #4953B8 100%);
+
+  overflow: hidden;
+}
+
+.logoMoveit {
+  fill: transparent;
+  animation: animationLogoMoveit 12s ease infinite alternate;
+
+}
+
+@keyframes animationLogoMoveit {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill:var(--white);
+  }
+}

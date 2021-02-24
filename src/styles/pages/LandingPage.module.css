@@ -57,6 +57,8 @@
   justify-content: center;
   align-items: center;
 
+  transform: skewX(-10deg);
+
   transition: 0.5s ease;
 }
 
@@ -84,6 +86,8 @@
   justify-content: center;
   align-items: center;
 
+  transform: skewX(-10deg);
+  
   transition: 0.5s ease;
 }
 
@@ -132,44 +136,4 @@
 
   
   background: radial-gradient(50% 158.02% at 50% 50%, rgba(89, 101, 224, 0.8) 27.55%, #505CD7 59.9%);
-}
-
-.bgLoader {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: 999;
-
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  background: linear-gradient(180deg, #5965E0 0%, #4953B8 100%);
-
-  overflow: hidden;
-}
-
-.logoMoveit {
-  fill: transparent;
-  animation: animationLogoMoveit 12s ease infinite alternate;
-
-}
-
-@keyframes animationLogoMoveit {
-  0% {
-    stroke-width: 0;
-    stroke-dasharray: 1 100;
-    fill: transparent;
-  }
-  25% {
-    stroke-width: 1;
-    stroke-dasharray: 100 0;
-  }
-  60%, 100% {
-    stroke-width: 0.3;
-    fill:var(--white);
-  }
 }
