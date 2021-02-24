@@ -1,0 +1,175 @@
+.landingContainer {
+  height: 85vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: none;
+}
+
+.containerLeft {
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-left: 3rem;
+}
+
+.containerLeft h1 {
+  color: var(--white);
+
+  font-size: 2.5rem;
+}
+
+.containerLeft p {
+  color: #fff;
+
+  margin-top: 1rem;
+
+  line-height: 150%;
+}
+
+.links {
+  display: flex;
+
+  margin-top: 2rem;
+}
+
+.linkPrimary {
+  background: var(--green);
+  
+  border: 0;
+  border-radius: 5px;
+
+  padding: 1rem;
+
+  height: 50px;
+
+  color: var(--white);
+  font-weight: 500;
+
+  margin-right: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s ease;
+}
+
+.linkPrimary img {
+  width: 25px;
+  height: 25px;
+}
+
+.linkPrimary:hover {
+  background: #41b325;
+}
+
+.linkSecondary {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+
+  padding: 1rem;
+
+  height: 50px;
+
+  color: var(--white);
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.5s ease;
+}
+
+.linkSecondary:hover{
+  background-color: var(--blue-dark);
+  border: 1px solid var(--blue-dark);
+}
+
+.containerRight {
+  display: flex;
+  justify-content: center;
+}
+
+.containerRight img {
+  width: 80%;
+}
+
+.bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bgVideo::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  
+  background: radial-gradient(50% 158.02% at 50% 50%, rgba(89, 101, 224, 0.8) 27.55%, #505CD7 59.9%);
+}
+
+.bgLoader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(180deg, #5965E0 0%, #4953B8 100%);
+
+  overflow: hidden;
+}
+
+.logoMoveit {
+  fill: transparent;
+  animation: animationLogoMoveit 12s ease infinite alternate;
+
+}
+
+@keyframes animationLogoMoveit {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 0.3;
+    fill:var(--white);
+  }
+}
