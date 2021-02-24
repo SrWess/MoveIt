@@ -17,3 +17,16 @@
   align-content: center;
   padding: 4rem;
 }
+
+@media screen and (max-width: 898px) {
+  .container section {
+    width: 80%;
+
+    margin: 0 auto;
+
+    padding: 4rem 0px 4rem 0px;
+
+    grid-template-columns: none;
+  }
+
+}

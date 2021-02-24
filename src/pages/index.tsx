@@ -28,7 +28,7 @@ export default function LandingPage() {
   };
 
   return (
-    <div>
+    <div className={styles.pageMain}>
       <Head>
         <title>Move.it</title>
       </Head>
