@@ -1,14 +1,14 @@
-import '../styles/global.css'
+import "../styles/global.css";
 
-import { ChallengesProvider } from '../contexts/ChallengeContext'
+import { ChallengesProvider } from "../contexts/ChallengeContext";
 
 function MyApp({ Component, pageProps }) {
-  return ( 
+  return (
     //Toda aplicação pode ter acesso aos dados do ChallengeContext
     <ChallengesProvider>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </ChallengesProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
